@@ -33,25 +33,24 @@ $(document).ready(function(){
 			}
 		}
 		
-		// 시간에 따라 배경화면이 변화는 부분
-		$(function () { 
-			var images =[
-				'place.jpg',
-				'cloud.jpg',
-				'bird.jpg'
-			];
 		
-			var i = 0; 
-			$(".bg").css("background-image", "url(/semiproject/image/" + images[i] + ")"); 
-			setInterval(function () { 
-				i++; 
-				if (i == images.length) { 
-					i = 0; 
-				} 
-			$(".bg").fadeOut(3000, function () { 
-				$(this).css("background-image", "url(/semiproject/image/" + images[i] + ")");
-				$(this).fadeIn(3000); }); }, 1000); 
-			});
-
+		// 시간에 따라 배경화면이 변화는 부분
+		// 클래스를 구분하여 z index 설정(css에 구현)
+		$(function(){
+			setInterval(function rotateImages(){
+				console.log('rotate실행');
+				var curPhoto = $('.bg div.current');
+				var nextPhoto = curPhoto.next();
+				if(nextPhoto.length == 0)
+					nextPhoto = $('.bg div:first');
+				
+				curPhoto.removeClass('current').addClass('previous');
+				nextPhoto.css({
+					'opacity':'0.0'
+				}).addClass('current').animate({'opacity':'1.0'}, 1000, function(){
+					curPhoto.removeClass('previous');
+				});
+			},4000);
+		})
 		
 });
