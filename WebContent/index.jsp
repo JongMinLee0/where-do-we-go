@@ -13,23 +13,30 @@
 <link rel="stylesheet" type="text/css" href="/semiproject/css/index.css">
 <script src="/semiproject/js/index.js"></script>
 <style>
-/* 배경 이미지 default */
-.bg{
-	width: 100%;
-	height: 500px;
-	color: #fff;
-	padding: 200px;
-	font-faily: Montsrrat, sans-serif;
-}
 
 </style>
 </head>
 <body>
 	<jsp:include page="/fragment/main_nav.jsp"></jsp:include>
 	<div class="bg">
-		<div class="bg_content_wrap">
-			<h1 class="bg_content">힘들다</h1>
-			<p class="bg_content">아 이거 너무 힘든데? 포기..</p>
+		<div id="cf3" class="current">
+			<img src="/semiproject/image/cloud.jpg" alt="photho1" />
+		</div>
+		<div>
+			<img src="/semiproject/image/bird.jpg" alt="photho2" />
+		</div>
+		<div>
+			<img src="/semiproject/image/place.jpg" alt="photho3" />
+		</div>
+	</div>
+	<div class="bg_content_wrap">
+		<div id="img_content">
+			<div id="content_bg"><img src="/semiproject/image/div_black.png" /></div>
+			<div id="content_wrap">
+				<h1 class="bg_content">힘들다</h1>
+				<p class="bg_content">아 이거 너무 힘든데? 포기..</p>
+			</div>
+		</div>
 			<form>
 				<div class="input-group">
 					<input type="text" class="form-control" size="50" placeholder="국가 및 도시를 입력하세요" required>
@@ -38,7 +45,16 @@
 					</div>
 				</div>
 			</form>
-		</div>
+	</div>
+	<div class="continent_wrap">
+		<ul>
+			<li>동아시아</li>
+			<li>동남아시아</li>
+			<li>유럽</li>
+			<li>미국</li>
+			<li>오세아니아/아프리카</li>
+			<li>남아시아/중동</li>
+		</ul>
 	</div>
 </body>
 </html>
