@@ -9,20 +9,6 @@ body{
 	height: 1400px;
 }
 
-/* 전체적인 메뉴바 성정  */
-.navbar {
-	width: 100%;
-	background-color: transparent;
-	border: 0px;
-}
-
-.navbar .container .collapse .nav .nav_link {
-	color: #fff;
-}
-
-.navbar .container .navbar-header .navbar-toggle .icon-bar {
-	background-color: #fff;
-}
 
 .bg_content{
 	margin: auto;
