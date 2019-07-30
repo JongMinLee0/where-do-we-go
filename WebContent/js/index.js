@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	
 		var didScroll;
 		// 스크롤시에 사용자가 스크롤했다는 것을 알림
 		$(window).scroll(function(event){
@@ -33,19 +32,26 @@ $(document).ready(function(){
 				});
 			}
 		}
-		var img_array = ['bird.jpg', 'cloud.jpg', 'place.jpg'];
-		// 이미지가 시간에 따라 변화
-		for(var i=0; i < img_array.length; i++){
-			var path = '/semiproject/image/'+img_array[i];
-			$('.bg').css({
-				'background-image': 'url(path)'
+		
+		// 시간에 따라 배경화면이 변화는 부분
+		$(function () { 
+			var images =[
+				'place.jpg',
+				'cloud.jpg',
+				'bird.jpg'
+			];
+		
+			var i = 0; 
+			$(".bg").css("background-image", "url(/semiproject/image/" + images[i] + ")"); 
+			setInterval(function () { 
+				i++; 
+				if (i == images.length) { 
+					i = 0; 
+				} 
+			$(".bg").fadeOut(3000, function () { 
+				$(this).css("background-image", "url(/semiproject/image/" + images[i] + ")");
+				$(this).fadeIn(3000); }); }, 1000); 
 			});
-			setInterval(function(){
-				i++;
-			}, 3000);
-			if(i==2)
-				i=0;
-		}
+
 		
-		
-	});
+});

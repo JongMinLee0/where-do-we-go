@@ -15,39 +15,17 @@
 <style>
 /* 배경 이미지 default */
 .bg{
-	background-image: url('/semiproject/image/place.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 500px;
 	width: 100%;
 	height: 500px;
 	color: #fff;
 	padding: 200px;
 	font-faily: Montsrrat, sans-serif;
 }
+
 </style>
 </head>
 <body>
 	<jsp:include page="/fragment/main_nav.jsp"></jsp:include>
-	<nav class="navbar navbar-default navbar-fixed-top" id="scroll_before">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"data-target="#myNavbar">
-					<span class="icon-bar"></span> 
-					<span class="icon-bar"></span> 
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand nav_link" style="color: white;"href="#myPage">우리</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="nav_link" href="#about">FAQ</a></li>
-					<li><a class="nav_link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-					<li><a class="nav_link" href="#portfolio">로그인</a></li>
-					<li><a class="nav_link" href="#pricing">회원가입</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
 	<div class="bg">
 		<div class="bg_content_wrap">
 			<h1 class="bg_content">힘들다</h1>

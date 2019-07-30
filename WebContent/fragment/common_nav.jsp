@@ -5,29 +5,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="/semiproject/css/main_nav.css">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/semiproject/css/common_nav.css">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" id="scroll_before">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"data-target="#myNavbar">
-					<span class="icon-bar"></span> 
-					<span class="icon-bar"></span> 
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand nav_link" style="color: white;"href="#myPage">우리</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="nav_link" href="#about">FAQ</a></li>
-					<li><a class="nav_link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-					<li><a class="nav_link" href="#portfolio">로그인</a></li>
-					<li><a class="nav_link" href="#pricing">회원가입</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
 	<nav class="navbar navbar-default navbar-fixed-top nav_scoll" id="scroll_after">
 		<div class="container">
 			<div class="navbar-header">
