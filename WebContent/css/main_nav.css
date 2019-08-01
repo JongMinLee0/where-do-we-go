@@ -1,7 +1,6 @@
 
 /* 전체 공통 nav 속성  */
 #scroll_after{
-	width: 100%;
 	display: none;
 	background-color: #fff;
 }
@@ -13,7 +12,6 @@
 
 /* 전체적인 메뉴바 성정  */
 .navbar {
-	width: 100%;
 	background-color: transparent;
 	border: 0px;
 }
