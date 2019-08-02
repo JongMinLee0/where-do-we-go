@@ -11,6 +11,7 @@ public class ReserveDTO {
 	private String email;
 	private String title;
 	private String option;
+	private int rbid; // 예약 취소 여부(0: 보통 / 1: 취소)
 
 	public String getEmail() {
 		return email;
