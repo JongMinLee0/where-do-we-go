@@ -29,6 +29,3 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
-//바로예약 누르면 패키지 옵션으로 이동
-
-

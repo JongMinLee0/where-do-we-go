@@ -27,7 +27,7 @@
 </style>
 </head>
 <body>
-	<jsp:include page="/fragment/main_nav.jsp"></jsp:include>
+	<jsp:include page="/fragment/common_nav.jsp"></jsp:include>
 	<nav class="navbar navbar-default navbar-fixed-top" id="scroll_before">
 		<div class="container">
 			<div class="navbar-header">
