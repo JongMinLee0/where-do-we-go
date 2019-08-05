@@ -20,23 +20,22 @@
 	<jsp:include page="/fragment/main_nav.jsp"></jsp:include>
 	<div class="bg">
 		<div id="cf3" class="current">
-			<img src="/semiproject/image/cloud.jpg" alt="photho1" />
+			<img src="/semiproject/image/see.PNG" alt="photho1" />
 		</div>
 		<div>
-			<img src="/semiproject/image/bird.jpg" alt="photho2" />
+			<img src="/semiproject/image/mountain.PNG" alt="photho2" />
 		</div>
 		<div>
-			<img src="/semiproject/image/place.jpg" alt="photho3" />
+			<img src="/semiproject/image/field.PNG" alt="photho3" />
 		</div>
 	</div>
 	<div class="bg_content_wrap">
 		<div id="content_wrap">
-			<h1 class="bg_content" style="font-size: 70px;">힘들다</h1>
+			<h1 class="bg_content" style="font-size: 70px;"><strong>YOURS TO EXPLORE</strong></h1>
 			<p class="bg_content" style="font-size: 25px;">아 이거 너무 힘든데? 포기..</p>
 		</div>
 		<form id="content_bg_form">
 			<div id="content_bg">
-				<img src="/semiproject/image/div_black.png" />
 			</div>
 			<div id="input_group">
 				<input type="text" class="form-control" size="50"
@@ -162,13 +161,13 @@
 					<span>싱가포르</span>
 				</div>
 				<div class="favorite_list" >
-					<span>오사카</span>
+					<span>파리</span>
 				</div>
 				<div class="favorite_list" id="duba2i">
-					<span>두바이</span>
+					<span>로스앤젤레스</span>
 				</div>
 				<div class="favorite_list" id="sing2">
-					<span>싱가포르</span>
+					<span>대만</span>
 				</div>
 			</div>
 		</div>
