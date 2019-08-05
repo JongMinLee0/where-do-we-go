@@ -9,6 +9,23 @@
 #scroll_after .container .collapse .nav li .nav_link{
 	color: black;
 }
+#scroll_before > div > div.navbar-header > a > p{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+    display: inline-block;
+}
+#scroll_before > div > div.navbar-header > a > img{
+	display: inline-block;
+	margin-top: -15px;
+}
+/*스크롤 내렸을때 바뀜*/
+#scroll_after > div > div.navbar-header > a > p{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+    display: inline-block;
+}
+#scroll_after > div > div.navbar-header > a > img{
+	display: inline-block;
+	margin-top: -15px;
+}
 
 /* 전체적인 메뉴바 성정  */
 .navbar {

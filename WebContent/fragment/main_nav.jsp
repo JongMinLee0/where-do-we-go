@@ -9,6 +9,7 @@
 <link
 	href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" id="scroll_before">
@@ -19,7 +20,9 @@
 					<span class="icon-bar"></span> 
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand nav_link" style="color: white;"href="#myPage">우리</a>
+				<a class="navbar-brand nav_link" style="color: white;" href="#"><img src="image/logo.png" style="width:60px; height:30px"  />
+					<p class="w3-xxlarge w3-myfont">WE-GO</p>
+				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
@@ -39,7 +42,9 @@
 					<span class="icon-bar" style="background-color: black"></span> 
 					<span class="icon-bar" style="background-color: black"></span>
 				</button>
-				<a class="navbar-brand nav_link" style="color: black;"href="#myPage">우리</a>
+				<a class="navbar-brand nav_link" style="color: black;" href="#"><img src="image/logo_blue.png" style="width:60px; height:30px"  />
+					<p class="w3-xxlarge w3-myfont">WE-GO</p>
+				</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar_after">
 				<ul class="nav navbar-nav navbar-right">
