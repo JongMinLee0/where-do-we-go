@@ -9,3 +9,12 @@
 #scroll_after .container .collapse .nav li .nav_link{
 	color: black;
 }
+#scroll_after > div > div.navbar-header > a > p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  display: inline-block;
+  
+}
+#scroll_after > div > div.navbar-header > a > img{
+	display: inline-block;
+	margin-top: -15px;
+}
