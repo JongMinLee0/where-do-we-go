@@ -35,7 +35,7 @@ $(document).ready(function(){
   
 <body>
 	<!-- include 메인메뉴-->
-	<jsp:include page="/fragment/common_nav.jsp"></jsp:include> 
+	
 	<!-- Links (sit on top) -->
 
 
@@ -237,7 +237,7 @@ $(document).ready(function(){
 
 	<!-- Footer -->
 	
-	    <jsp:include page="/fragment/footer.jsp"></jsp:include>
+	  
 	
 		
 			<!-- <a href="https://www.w3schools.com/w3css/default.asp"
