@@ -45,7 +45,7 @@
   </tr>
   <tr>
     <th>상점거래 ID</th>
-    <td>merchant_1564964736631</td>
+    <td>merdfsf--736631</td>
   </tr>
   <tr>
     <th>주문금액</th>
@@ -64,11 +64,11 @@
     <td>카드</td>
   </tr>
   <tr>
-    <th>결제여부</th>
+    <th>결제 여부</th>
     <td>결제 완료(승인)</td>
   </tr>
   <tr>
-    <th>결제일시</th>
+    <th>결제 일시</th>
     <td>2019-07-07</td>
   </tr>
   </table>

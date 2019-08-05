@@ -20,7 +20,7 @@ ul {
 
 .step-state {
 	padding: 10px 0 15px;
-	margin-top: 15px;
+	margin-top: 40px;
 	background:white;
 }
 
@@ -34,10 +34,11 @@ ul {
 	float: left;
 	position: relative;
 	width: 30%; /* 5개 진행바를 5등분 */
-	padding-top: 50px; /* 진행바 영역 확보 */
+	padding-top: 60px; /* 진행바 영역 확보 */
 	font-size: 13px;
 	text-align: center;
 	line-height: 12px;
+	
 	
 }
 
