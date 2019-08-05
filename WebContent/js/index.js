@@ -2,6 +2,7 @@ $(document).ready(function(){
 		var didScroll;
 		// 스크롤시에 사용자가 스크롤했다는 것을 알림
 		$(window).scroll(function(event){
+			console.log('scroll 발생')
 			didScroll = true;
 			setInterval(function(){
 				if(didScroll){
@@ -16,6 +17,7 @@ $(document).ready(function(){
 		// 스크롤 시에 동작
 		function hasCrolled(){
 			var height = $(document).scrollTop();
+			console.log('scroll 동작');
 			if(height >=100){
 				$('#scroll_before').css({
 					'display':'none'

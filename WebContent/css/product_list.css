@@ -1,21 +1,42 @@
+* {
+	
+	box-sizing: border-box;
+}
+
+
+
 /*도시 메뉴 이미지입니다.*/
 .jumbotron{
 	
 	width:100%;
 	height:400px;
-	background-image:url('/semiproject/Singapore/Singapore-Travel.jpg');
+	background-image:url('/semiproject/Singapore/singapore.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	
 }
 
+#d{
+
+	margin:0;
+	padding:0;
+}
 
 
 /*메뉴바입니다.*/
-#btn{
-	top:-50px;
-	margin-left: 35%;
+#btn {
+	position:relative;
+	bottom:50px;
+	left: 25%;
+	
 }
+#btn div a button {
+	padding:10px 20px 10px 20px;
+	margin: 0 -5px 0 -5px;
+	
+}
+
+
 
 
 /* 상품 목록 슬라이드 */
@@ -40,7 +61,7 @@
 #myCarousel > div > div.item.active > div > .pro_img{
 	width: 20%;
 	height: 300px;
-	background-image: url('/semiproject/image/osaka.jpg');
+	background-image: url('/semiproject/Singapore/seoubokkem.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 60%;
 	float: left;
@@ -79,7 +100,7 @@
 #myCarousel > div > div.item > div > .pro_img{
 	width: 20%;
 	height: 300px;
-	background-image: url('/semiproject/image/osaka.jpg');
+	background-image: url('/semiproject/Singapore/singapo_unibersher.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% 60%;
 	float: left;
@@ -237,18 +258,6 @@
 
 
 
-
-/* 인기 여행지 제목 */
-.favorite .favorite_des .favorite_header{
-	width: 100%;
-	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 80px;
-}
-
-.favorite .favorite_des .favorite_header h3{
-	color: #888888;
-}
 
 /* 상품 목록 슬라이드 */
 

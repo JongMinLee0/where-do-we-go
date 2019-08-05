@@ -4,36 +4,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/css/product_list.css">
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/js/product_list.js">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="/semiproject/js/bootstrap.min.js"></script>
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css"
-	href="/semiproject/css/common_nav.css">
-<link
-	href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-	rel="stylesheet">
-<style>
-#map {
-	height: 100%;
-}
-
-html, body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="/semiproject/css/common_nav.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <style>
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 </head>
 <body>
 	<jsp:include page="/fragment/common_nav.jsp" flush="true"></jsp:include>
@@ -41,21 +34,25 @@ html, body {
 
 	<!-- 도시 메뉴  이미지. -->
 	<div class="jumbotron text-center">
-		
-			<h1 style="margin-top: 100px;">싱가포르</h1>
-	
+
+		<h1 style="margin-top: 100px; color: white;">싱가포르</h1>
+
 	</div>
 </body>
 <div class="btn-group btn-block" id="btn">
 	<div class="btn-group">
-		<button type="button" class="btn btn-lg" id="c1">도시정보<a href="#city_neyo" name="link_1"/></button>
-		<button type="button" class="btn btn-lg" id="c2">어트렉션 공연</button>
-		<button type="button" class="btn btn-lg" id="c3">액티비티 및 투어</button>
-		<button type="button" class="btn btn-lg" id="c4">교통 수단</button>
-		<button type="button" class="btn btn-lg" id="c5">추천 맛집</button>
+
+		<a href="#city_neyo" id="d"><button class="btn btn-lg btn-primary"
+				id="c">도시정보</button></a> 
+		<a href="#favor" id="d"><button class="btn btn-lg btn-primary" id="c">추천하는 액티비티</button></a> 
+		<a href="#activ" id="d"><button class="btn btn-lg btn-primary" id="c">액티비티 및 투어</button></a> 
+		<a href="#atect" id="d"><button class="btn btn-lg btn-primary" id="c">어트렉션 공연</button></a> 
+		<a href="#atection" id="d"><button class="btn btn-lg btn-primary" id="c">대중교통</button></a> 
+		<a href="#resta" id="d"><button class="btn btn-lg btn-primary" id="c">추천맛집</button></a>
+
 	</div>
 </div>
-<section class="favorite">
+<section class="favorite" id="favor">
 	<div class="favorite_des">
 		<div class="favorite_header">
 			<h1>싱가폴</h1>
@@ -153,7 +150,7 @@ html, body {
 	</div>
 </section>
 
-<section class="activities">
+<section class="activities" id="activ">
 	<div class="activities_des">
 		<div class="activities_header">
 			<h1>액티비티 및 투어</h1>
@@ -236,12 +233,12 @@ html, body {
 				</div>
 			</div>
 			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev"
-				style="background-image: none;"> <i class="fa fa-angle-left"
-				aria-hidden="true"
+			<a class="left carousel-control" href="#myCarousel_1"
+				data-slide="prev" style="background-image: none;"> <i
+				class="fa fa-angle-left" aria-hidden="true"
 				style="color: gray; font-size: 50px; line-height: 300px;"></i> <span
 				class="sr-only">Previous</span>
-			</a> <a class="right carousel-control" href="#myCarousel"
+			</a> <a class="right carousel-control" href="#myCarousel_1"
 				data-slide="next" style="background-image: none;"> <i
 				class="fa fa-angle-right" aria-hidden="true"
 				style="color: gray; font-size: 50px; line-height: 300px;"></i> <span
@@ -254,7 +251,7 @@ html, body {
 
 
 
-<section class="atection">
+<section class="atection" id="atect">
 	<div class="atection_des">
 		<div class="atection_header">
 			<h1>어트랙션</h1>
@@ -337,12 +334,12 @@ html, body {
 				</div>
 			</div>
 			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel_1"
+			<a class="left carousel-control" href="#myCarousel_2"
 				data-slide="prev" style="background-image: none;"> <i
 				class="fa fa-angle-left" aria-hidden="true"
 				style="color: gray; font-size: 50px; line-height: 300px;"></i> <span
 				class="sr-only">Previous</span>
-			</a> <a class="right carousel-control" href="#myCarousel_1"
+			</a> <a class="right carousel-control" href="#myCarousel_2"
 				data-slide="next" style="background-image: none;"> <i
 				class="fa fa-angle-right" aria-hidden="true"
 				style="color: gray; font-size: 50px; line-height: 300px;"></i> <span
@@ -354,7 +351,7 @@ html, body {
 
 
 
-<section class="atection">
+<section class="atection" id="atection">
 	<div class="atection_des">
 		<div class="atection_header">
 			<h1>교통수단</h1>
@@ -401,7 +398,7 @@ html, body {
 
 
 
-<section class="restaurant">
+<section class="restaurant" id="resta">
 	<div class="restaurant_des">
 		<div class="restaurant_header">
 			<h1>세계맛집</h1>
@@ -462,16 +459,8 @@ html, body {
 		</tr>
 		<tr>
 			<del id="google_map">
-				<div
-					style="text-decoration: none; overflow: hidden; max-width: 100%; width: 400px; height: 200px;">
-					<div id="embedmap-display"
-						style="height: 100%; width: 100%; max-width: 100%;">
-						<iframe style="height: 100%; width: 100%; border: 0;"
-							src="https://www.google.com/maps/embed/v1/place?q=singapor&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-						</iframe>
-					</div>
-					<a class="embedmap-code" href="https://www.embed-map.com"
-						id="authmaps-data">https://www.embed-map.com</a>
+				<div>
+					<jsp:include page="/fragment/test.jsp" flush="true"></jsp:include> 
 				</div>
 			</del>
 		</tr>
@@ -523,16 +512,18 @@ html, body {
 		</tr>
 	</table>
 </div>
-
-
+<jsp:include page="/fragment/footer.jsp" flush="true"></jsp:include>
 
 <script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
-fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-
+	!function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (!d.getElementById(id)) {
+			js = d.createElement(s);
+			js.id = id;
+			js.src = 'https://weatherwidget.io/js/widget.min.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}
+	}(document, 'script', 'weatherwidget-io-js');
 </script>
-
-
 </body>
 </html>
