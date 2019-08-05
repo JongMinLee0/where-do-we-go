@@ -14,9 +14,8 @@ body, html {
 	color:gray;
 }
  .activity-title{
-     margin: 30px;
+     margin: 20px;
      padding: 10px;  
-         
         
    }
     #act-title {
@@ -70,46 +69,58 @@ body, html {
 
 /*빠른 예약 리모컨 */
 .fast-remote {
-	width: 350px;
-	height: 200px;
+	width: 220px;
+	height: 300px;
 	border-style: outset;
 	padding: 15px;
 	position: fixed;
-	right: 170px;
+	right: 70px;
 	bottom: 50px;
-	
+		
 }
 
 .remote-title {
 	font-size: 15px;
-	padding: 25px;
 	color: dimgrey;
 }
+.fast-price{
+	margin:0 10px 0 10px;
+}
+#animate {
+	 -webkit-animation: blink 1s linear infinite;
+}
+@-webkit-keyframes blink {
+    0% { color: blue; }
+    100% { color: #7FFFD4; }
+    
 
+}
 .present-price {
 	color: #333333;
-	padding-left: 10%;
+	line-height:50px;
 	font-size: 30px;
 }
 
 .past-price {
 	color: darkgray;
+	
 }
 
 .button1 {
 	background-color: #008CBA;
 	border: none;
-	color: white;
 	padding: 15px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
 	cursor: pointer;
-	margin-left: 10px;
+	
 }
 
 .button4 {
 	border-radius: 12px;
-	width: 300px;
+	width: 180px;
+	height:100px;
+	
 }

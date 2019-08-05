@@ -11,12 +11,31 @@
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css"
-	href="/semiproject/css/activity.css">
+	href="/semiproject/css/common_nav.css">
+<link rel="stylesheet" type="text/css"
+	href="/semiproject/css/product_detail.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+//빠른 리모컨 위치 이동
+$(document).ready(function(){
+	  $("a").on('click', function(event) {
+	    if (this.hash !== "") {
+	      event.preventDefault();
+	      var hash = this.hash;
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 600, function(){
+	        window.location.hash = hash;
+	      });
+	    } 
+	  });
+	});
 
+</script>
   
 <body>
 	<!-- include 메인메뉴-->
-	<jsp:include page="/fragment/main_nav.jsp"></jsp:include>
+	<jsp:include page="/fragment/common_nav.jsp"></jsp:include> 
 	<!-- Links (sit on top) -->
 
 
@@ -41,19 +60,20 @@
 
 	<!-- 빠른 예약 리모컨-->
 	<div class="fast-remote">
-		<span class="remote-title">우리어디갈까 최저가 보상제</span>
+		<span class="fast-price">우리어디갈까</span>
+		<p class="fast-price" id="animate">최저가 보상제!!</p>
 		<p class="fast-price">
 			<strong class="present-price"> ₩ <span>59,100</span>
 			</strong>
 			<del class="past-price">117,100</del>
+		     <br> 내일 예약가능
 		</p>
-		<span class="remote-title">내일 예약가능</span>
 		<p></p>
-		<button class="button1 button4" id="go-to">바로예약</button>
+		<a href="#fast-reserve" style="color:white"><button class="button1 button4" >바로예약</button></a>
 	</div>
 
 	<!-- 패키지 내용 -->
-	<div class="w3-container" id="where">
+	<div class="w3-container" id="where-pack">
 		<div class="w3-content w3-border-bottom" style="max-width: 700px">
 			<ul>
 				<li><strong>여름 한정 15% 추가 할인! (최대 7만원)</strong>을 확인하고 특별한 할인 혜택을
@@ -72,11 +92,15 @@
 			</ul>
 		</div>
 	</div>
-    <br/>
+    <br/> 
+    
+    <!--  바로예약버튼 눌렀을 시 이동 구간 --> 
+	<div class="main" id="fast-reserve">
+	</div>
 	<!-- 패키지 옵션 예약  -->
 	<div class="w3-container" id="where">
 		<div class="w3-content w3-border-bottom" style="max-width: 700px">
-			<h2 class="package-title">패키지옵션</h2>
+			<h2 class="package-title" >패키지옵션</h2>
 			<p>
 				<span class="w3-tag">날짜 및 패키지 옵션 선택</span>
 			</p>
@@ -110,7 +134,7 @@
 				</p>
 				<p>
 					<input class="w3-input w3-padding-16 w3-border" type="text"
-						placeholder="total price" required name="Price">
+						placeholder="total price" required name="Price"/>
 				</p>
 				<p>
 					<strong>날짜 선택</strong>
@@ -205,18 +229,22 @@
 					
 			<img class="w3-input" src="image/disneymap.PNG" style="height: 50%;"/>
 			</div></div>
+			
+		<!-- 여행후기 -->
+		<br/>
+       <%--  <jsp:include page="/fragment/activityReview.jsp"></jsp:include> --%>
+
 
 	<!-- Footer -->
-	<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-		<p>
-			Powered by <a href="https://www.w3schools.com/w3css/default.asp"
-				title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
-		</p>
-	</footer>
+	
+	    <jsp:include page="/fragment/footer.jsp"></jsp:include>
+	
+		
+			<!-- <a href="https://www.w3schools.com/w3css/default.asp"
+				title="W3.CSS" target="_blank" class="w3-hover-text-green"></a> -->
 
 
-
-	<script src="/semiproject/js/activity.js"></script>
+	<script src="/semiproject/js/product_detail.js"></script>
 
 </body>
 </html>
