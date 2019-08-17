@@ -23,7 +23,9 @@
 					<span class="icon-bar" style="background-color: black"></span> 
 					<span class="icon-bar" style="background-color: black"></span>
 				</button>
+
 				<a class="navbar-brand nav_link" style="color: black;" href="/semiproject/semi"><img src="/semiproject/image/logo_blue.png" style="width:60px; height:30px"  />
+
 					<p class="w3-xxlarge w3-myfont">WE-GO</p>
 				</a>	
 			</div>

@@ -12,6 +12,7 @@
 	href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 	rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -25,7 +26,9 @@
 					<span class="icon-bar"></span> 
 					<span class="icon-bar"></span>
 				</button>
+
 				<a class="navbar-brand nav_link" style="color: white;" href="/semiproject/semi"><img src="image/logo.png" style="width:60px; height:30px"  />
+
 					<p class="w3-xxlarge w3-myfont">WE-GO</p>
 				</a>
 			</div>
