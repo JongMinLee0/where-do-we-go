@@ -49,7 +49,7 @@ body{
 
 /* 사진위에 글씨 */
 #content_wrap{
-	width: 30%;
+	width: 50%;
 	height: 150px;
 	margin: auto;
 }
@@ -192,7 +192,6 @@ body > div.continent_wrap > div > div > .continent{
 }
 #flist_wrap > .favorite_list:hover{
 	box-shadow: 5px 5px 5px #aaaaaa;
-	margin-top: -5px;
 }
 .favorite{
 	width: 100vw;
@@ -225,6 +224,26 @@ body > div.continent_wrap > div > div > .continent{
 }
 #osaka{
 	background-image: url('/semiproject/image/osaka.jpg');
+	background-size: cover;
+}
+#dubai{
+	background-image: url('/semiproject/image/dubai.jpg');
+	background-size: cover;
+}
+#sing{
+	background-image: url('/semiproject/image/sing.jpg');
+	background-size: cover;
+}
+#paris{
+	background-image: url('/semiproject/image/paris.JPG');
+	background-size: cover;
+}
+#duba2i{
+	background-image: url('/semiproject/image/los.JPG');
+	background-size: cover;
+}
+#sing2{
+	background-image: url('/semiproject/image/sing2.JPG');
 	background-size: cover;
 }
 
@@ -290,9 +309,9 @@ body > div.continent_wrap > div > div > .continent{
 #myCarousel > div > div.item > div > .pro_img{
 	width: 20%;
 	height: 300px;
-	background-image: url('/semiproject/image/osaka.jpg');
+	/* background-image: url('/semiproject/image/osaka.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% 60%;
+	background-size: 100% 60%; */
 	float: left;
 	margin-left: 4%;
 	border: 1px solid #BFBFBF;
@@ -323,3 +342,18 @@ body > div.continent_wrap > div > div > .continent{
 	height: 200px;
 	margin: auto;
 }
+
+/* 도시 a 태그 변경 */
+#flist_wrap div a{
+	text-decoration: none;
+}
+#flist_wrap div a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+
+

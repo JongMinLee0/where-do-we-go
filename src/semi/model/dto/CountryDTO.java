@@ -2,27 +2,40 @@ package semi.model.dto;
 
 // 대륙 나라 도시 DTO
 public class CountryDTO {
-	private String city;
-	private String country;
-	private String continent;
-	private String lat; // 위도 경도
-	private String kor_country;
-	private String kor_city;
+	private String continent;   // 대륙
+	private String country;    // 나라
+	private String city; // 도시
+	private double lat; // 위도
+	private double lon; // 경도
+	private String time; // 시간대
+	private String month;  // 방문하기 좋은 시기 
+	private String imagepath; // 이미지 경로
+	private String content; // 도시정보
+	private String weather; // 날씨정보
+	private String money; // 통화
 
-	public String getCity() {
-		return city;
+	public String getContent() {
+		return content;
 	}
 
-	public void setCity(String city) {
-		this.city = city;
+	public void setContent(String content) {
+		this.content = content;
 	}
 
-	public String getCountry() {
-		return country;
+	public String getMoney() {
+		return money;
 	}
 
-	public void setCountry(String country) {
-		this.country = country;
+	public void setMoney(String money) {
+		this.money = money;
+	}
+
+	public String getWeather() {
+		return weather;
+	}
+
+	public void setWeather(String weather) {
+		this.weather = weather;
 	}
 
 	public String getContinent() {
@@ -33,28 +46,60 @@ public class CountryDTO {
 		this.continent = continent;
 	}
 
-	public String getLat() {
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public double getLat() {
 		return lat;
 	}
 
-	public void setLat(String lat) {
+	public void setLat(double lat) {
 		this.lat = lat;
 	}
 
-	public String getKor_country() {
-		return kor_country;
+	public double getLon() {
+		return lon;
 	}
 
-	public void setKor_country(String kor_country) {
-		this.kor_country = kor_country;
+	public void setLon(double lon) {
+		this.lon = lon;
 	}
 
-	public String getKor_city() {
-		return kor_city;
+	public String getTime() {
+		return time;
 	}
 
-	public void setKor_city(String kor_city) {
-		this.kor_city = kor_city;
+	public void setTime(String time) {
+		this.time = time;
+	}
+
+	public String getMonth() {
+		return month;
+	}
+
+	public void setMonth(String month) {
+		this.month = month;
+	}
+
+	public String getImagepath() {
+		return imagepath;
+	}
+
+	public void setImagepath(String imagepath) {
+		this.imagepath = imagepath;
 	}
 
 }
