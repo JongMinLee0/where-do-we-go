@@ -16,8 +16,8 @@
 }
 
 #footer_content_wrap > p:nth-child(2) > a{
-	text-decoration: none;
+	text-decoration: none !important;
 }
 #footer_content_wrap > p:nth-child(2) > a:hover{
-	color: white;
+	color: green !important;
 }

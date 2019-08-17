@@ -10,9 +10,6 @@
 	border: 1px solid black;
 }
 
-body > div.main > div > table > tbody > tr:nth-child(3) > td{
-	border: 0;
-}
 
 .table_wrap{
 	max-width: 90%;
@@ -36,4 +33,16 @@ body > div.main > div:nth-child(3) > table > thead{
 	font-size: 16px;
 	font-weight: bold;
 	border: 2px solid black;
+}
+
+/* 페이징 처리 */
+#pagi_wrap{
+	width: 90%;
+	margin: auto;
+}
+
+#pagination{
+	width: 50%;
+	height: 30px;
+	margin-left: 55%;
 }

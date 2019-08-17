@@ -2,47 +2,25 @@ package semi.model.dto;
 
 // 상품 DTO
 public class ProductDTO {
-	private String title;
-	private String option;
-	private int price; // 가격
-	private String content;
-	private String imgaePath;
-	private int readCount; // 조회수
-	private int pid; // 상품 번호
+
+	private int pid; // 시퀀스
+	private int cid; // 상품 분류
+	// 1. 액티비티
+	// 2. 공연
+	// 3. 대중교통
+	// 4. 맛집
+	private int price; // 출시가격
+	private String id; // 관리자 id
 	private int count; // 수량
-	private String id; // 예약자 id
-	private String city; // 상품 도시
-
-	public String getId() {
-		return id;
+	private String title;// 제목
+	private String options;// 수량
+	
+	public int getPid() {
+		return pid;
 	}
 
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getOption() {
-		return option;
-	}
-
-	public void setOption(String option) {
-		this.option = option;
+	public void setPid(int pid) {
+		this.pid = pid;
 	}
 
 	public int getPrice() {
@@ -53,36 +31,20 @@ public class ProductDTO {
 		this.price = price;
 	}
 
-	public String getContent() {
-		return content;
+	public int getCid() {
+		return cid;
 	}
 
-	public void setContent(String content) {
-		this.content = content;
+	public void setCid(int cid) {
+		this.cid = cid;
 	}
 
-	public String getImgaePath() {
-		return imgaePath;
+	public String getId() {
+		return id;
 	}
 
-	public void setImgaePath(String imgaePath) {
-		this.imgaePath = imgaePath;
-	}
-
-	public int getReadCount() {
-		return readCount;
-	}
-
-	public void setReadCount(int readCount) {
-		this.readCount = readCount;
-	}
-
-	public int getPid() {
-		return pid;
-	}
-
-	public void setPid(int pid) {
-		this.pid = pid;
+	public void setId(String id) {
+		this.id = id;
 	}
 
 	public int getCount() {
@@ -91,6 +53,22 @@ public class ProductDTO {
 
 	public void setCount(int count) {
 		this.count = count;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getOptions() {
+		return options;
+	}
+
+	public void setOptions(String options) {
+		this.options = options;
 	}
 
 }

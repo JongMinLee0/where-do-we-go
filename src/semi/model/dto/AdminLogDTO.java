@@ -2,12 +2,12 @@ package semi.model.dto;
 
 // 관리자
 public class AdminLogDTO {
-	private int no; // log number
-	private String intime; // 관리자 접속 시간
-	private String outtime; // 관리자 접속 종료 시간
-	private String id; // 관리자 id
-	private String content; // log내용 (변경사항)
-	private String logtime; // 변경 시간
+	private int no; // 시퀀스
+	private String time; // 적용 시간
+	private String id; // 변경자 아이디
+	private String content; // 로그 내용
+	private String name; // 변경자 이름
+	private String ip; // 변경한 곳 ip
 
 	public int getNo() {
 		return no;
@@ -17,20 +17,12 @@ public class AdminLogDTO {
 		this.no = no;
 	}
 
-	public String getIntime() {
-		return intime;
+	public String getTime() {
+		return time;
 	}
 
-	public void setIntime(String intime) {
-		this.intime = intime;
-	}
-
-	public String getOuttime() {
-		return outtime;
-	}
-
-	public void setOuttime(String outtime) {
-		this.outtime = outtime;
+	public void setTime(String time) {
+		this.time = time;
 	}
 
 	public String getId() {
@@ -49,12 +41,20 @@ public class AdminLogDTO {
 		this.content = content;
 	}
 
-	public String getLogtime() {
-		return logtime;
+	public String getName() {
+		return name;
 	}
 
-	public void setLogtime(String logtime) {
-		this.logtime = logtime;
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
 	}
 
 }

@@ -1,34 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <link rel="stylesheet" type="text/css" href="/semiproject/css/admin_reserve.css">
-<div class="table_wrap">
-	<table class="answer_table">
-		<tr>
-			<td>예약일자</td>
-			<td style="text-align: left;">
-				<input type="date" name="date"/>
-			</td>
-		</tr>
-		<tr>
-			<td>예약상태</td>
-			<td style="text-align: left;">
-				<select class="form-control" name="state">
-					<option value="">예약완료</option>
-					<option value="">취소신청</option>
-					<option value="">취소완료</option>
-					<option value="">수령완료</option>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td>예약자 성명</td>
-			<td><input type="text" id="input_name" name="name" /></td>
-		</tr>
-		<tr>
-			<td colspan="2"><input type="button" name="answer" id="answer" value="조회"/></td>
-		</tr>
-	</table>
-</div>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<script src="/semiproject/js/admin_reserve.js" ></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+	<script src="sweetalert2.all.min.js"></script>
+<input type="hidden" name="pageNum" id="pageNum" value="${sessionScope.pageNum}" />
 <div class="table_wrap">
 	<table class="answer_table">
 		<thead>
@@ -43,15 +20,83 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>1</td>
-				<td>2019.08.05</td>
-				<td><a href="#">유니버셜 익스프레스 패스4</a></td>
-				<td>미니언 라이드</td>
-				<td>4</td>
-				<td>이종민</td>
-				<td>예약완료</td>
-			</tr>
+			<c:forEach items="${sessionScope.reserveList}" var="rList">
+				<tr>
+					<td>${rList.no}</td>
+					<td>${rList.day}</td>
+					<td>${rList.title}</td>
+					<td>${rList.options}</td>
+					<td>${rList.pnum}</td>
+					<td>${rList.name }</td>
+					<td>
+						<c:choose>
+							<c:when test="${rList.rpId eq '취소신청'}">
+								<input type="hidden" class="imp_uid" value="${rList.imp_uid}" />
+								<input type="hidden" class="pid" value="${rList.pid}"/>
+								<input type="button" class="cancel_btn" value="에약취소" style="color: orange;"/>
+							</c:when>
+							<c:otherwise>
+								${rList.rpId}
+							</c:otherwise>
+						</c:choose>
+					</td>
+				</tr>
+			</c:forEach>
 		</tbody>
 	</table>
+	<div id="pagi_wrap">
+		<div id="pagination">
+			<ul class="pagination pagination-sm">
+				<li class="page-item">
+	      			<a class="page-link" href="/semiproject/semi/admin/reserve?pageNum=${pdto.prePage}" aria-label="Previous">
+	        			<span aria-hidden="true">&laquo;</span>
+	        			<span class="sr-only">Previous</span>
+	      			</a>
+	    		</li>
+	    		<c:set var="pdto" value="${sessionScope.pdto}" />
+	    		<c:forEach var="i" begin="${pdto.startPage}" end="${pdto.endPage}">
+			    <li class="page-item"><a class="page-link" href="/semiproject/semi/admin/reserve?pageNum=${i}">${i}</a></li>
+			    </c:forEach>
+			    <li class="page-item">
+	      			<a class="page-link" href="/semiproject/semi/admin/reserve?pageNum=${pdto.nextPage}" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				        <span class="sr-only">Next</span>
+				   </a>
+	    		</li>
+	  		</ul>
+		</div>
+	</div>
 </div>
+<script>
+$(document).ready(function(){
+	// 로그 페이지 active 처리
+	var index = $('#pageNum').val()*1;
+	var active = (index%5)+1;
+	if(active==1)
+		active=6;
+	var pageList = $('#pagination > ul li:nth-child('+active+')');
+	pageList.addClass('active');
+	$(".cancel_btn").on('click',function(){
+	    alert("click");
+		$.ajax({
+			url : "/semiproject/refund.do",
+			dataType : "text",
+			type:"POST",
+			data:"imp_uid="+$(".imp_uid").val(),
+			success : function(data) {
+				swal("Good job!", "예약취소 성공!", "success")
+			}
+		});
+	})
+	
+	
+	
+	
+});
+</script>
+
+<%
+session.removeAttribute("reserveList");
+session.removeAttribute("pageNum");
+session.removeAttribute("pdto");
+%>

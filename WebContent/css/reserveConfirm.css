@@ -197,3 +197,13 @@ h1.a:after {
 	margin-top:2%;
 	
 }
+
+#customers > tbody > tr > th
+{
+	width:126px;
+}
+body > h1.a
+{
+	text-align: center;
+}
+
