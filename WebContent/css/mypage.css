@@ -60,6 +60,7 @@
 	margin-right: 35px;
 	color: #228B22;/*라임 그린*/
 	font-size: 16px;
+
 }
 #re_textlist >i {
 	
@@ -335,5 +336,6 @@ section.pass_pay .btn{
 body > div.my_container > div > div.w3-col.m7 > div:nth-child(2){
 	display: none;
 }
+
 
 

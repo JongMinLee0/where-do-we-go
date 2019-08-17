@@ -1,9 +1,8 @@
+
 * {
 	
 	box-sizing: border-box;
 }
-
-
 
 /*도시 메뉴 이미지입니다.*/
 .jumbotron{
@@ -15,6 +14,7 @@
 	background-size: 100% 100%;
 	
 }
+
 
 #d{
 
@@ -35,9 +35,6 @@
 	margin: 0 -5px 0 -5px;
 	
 }
-
-
-
 
 /* 상품 목록 슬라이드 */
 

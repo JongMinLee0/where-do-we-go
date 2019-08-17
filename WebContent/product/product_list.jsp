@@ -1,12 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>	
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
+
 <link rel="stylesheet" type="text/css"
 	href="/semiproject/css/product_list.css">
 <link rel="stylesheet" type="text/css"
@@ -42,7 +46,6 @@
 </body>
 <div class="btn-group btn-block" id="btn">
 	<div class="btn-group">
-
 		<a href="#city_neyo" id="d"><button class="btn btn-lg btn-primary"
 				id="c">도시정보</button></a> 
 		<a href="#favor" id="d"><button class="btn btn-lg btn-primary" id="c">추천하는 액티비티</button></a> 
@@ -225,9 +228,6 @@
 		</div>
 	</div>
 </section>
-
-
-
 <section class="atection" id="atection">
 	<div class="atection_des">
 		<div class="atection_header">
@@ -257,9 +257,6 @@
 		</div>
 	</div>
 </section>
-
-
-
 <section class="restaurant" id="resta">
 	<div class="restaurant_des">
 		<div class="restaurant_header">
